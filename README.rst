@@ -18,3 +18,6 @@ Usage
     >>> from rome import Roman
     >>> Roman('I') + 5 == Roman('VI')
     True
+
+    >>> Roman('I') + 5
+    6
