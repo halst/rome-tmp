@@ -1,0 +1,17 @@
+#! /usr/bin/env python
+"""Roman numerals converter.
+
+Usage: roman <numeral>
+
+"""
+from docopt import docopt
+
+from rome import Roman
+
+
+if __name__ == '__main__':
+    args = docopt(__doc__)
+    try:
+        print(Roman(args['<numeral>']))
+    except ValueError as e:
+        sys.exit(e)
