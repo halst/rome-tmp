@@ -21,3 +21,6 @@ Usage
 
     >>> Roman('I') + 5
     6
+
+    >>> Roman('II') + 5
+    7
